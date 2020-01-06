@@ -16,7 +16,7 @@ export class AppComponent {
 
   openCalc() {
     this.calc.open().afterClosed().subscribe(r => {
-      if (r) {
+      if (r !== undefine) {
         this.input = r;
       }
     });
