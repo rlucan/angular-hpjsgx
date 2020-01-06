@@ -1,0 +1,6 @@
+<div class="session">
+  <div *ngFor="let s of session.session">{{s}}</div>
+</div>
+<div class="number" *ngIf="session.result !== null">
+  {{session.result}}
+</div>

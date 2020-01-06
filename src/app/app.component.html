@@ -1,11 +1,3 @@
-<app-history></app-history>
-<hr />
-<app-display></app-display>
-<hr />
-<app-button [role]="'1'"></app-button>
-<app-button [role]="'2'"></app-button>
-<app-button [role]="'.'"></app-button>
-<app-button [role]="'+/-'"></app-button>
-<hr />
-<app-button [role]="'+'"></app-button>
-<app-button [role]="'-'"></app-button>
+<input [ngModel]="input" />
+<mat-icon (click)="openCalc()">apps</mat-icon>
+

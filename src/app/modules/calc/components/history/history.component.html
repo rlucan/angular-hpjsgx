@@ -1,0 +1,6 @@
+<ng-container *ngIf="history$ | async as history">
+  <mat-icon *ngIf="history.length > 0" (click)="clearHistory()">delete</mat-icon>
+  <div style="overflow: auto">
+    <app-session [session]="h" *ngFor="let h of history"></app-session>
+  </div>
+</ng-container>

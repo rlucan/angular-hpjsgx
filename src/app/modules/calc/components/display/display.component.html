@@ -1,0 +1,5 @@
+<app-session [session]="session$ | async"></app-session>
+<div style="flex: 1 1 100%"></div>
+<div class="number" *ngIf="currentInput$ | async as ci" [ngClass]="{invalid: !ci.valid}">
+  {{ci.valid ? (ci.sign === '-' ? '-' : '') + ci.inputNumber : 'Invalid operation'}}
+</div>

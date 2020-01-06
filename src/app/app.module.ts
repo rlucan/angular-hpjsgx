@@ -1,20 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { ButtonComponent } from './components/button/button.component';
-import { HistoryComponent } from './components/history/history.component';
-import { DisplayComponent } from './components/display/display.component';
+import {CalcModule} from './modules/calc/calc.module';
+import {AppComponent} from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule, MatIconModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonComponent,
-    HistoryComponent,
-    DisplayComponent
   ],
   imports: [
-    BrowserModule
+    FormsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    CalcModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
